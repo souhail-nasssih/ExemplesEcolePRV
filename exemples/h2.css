@@ -1,0 +1,122 @@
+.custom-navbar {
+    background-color: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .custom-navbar-brand {
+    font-weight: bold;
+  }
+  
+  .custom-navbar-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 15px;
+  }
+  
+  .custom-navbar-toggle-icon {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-navbar-toggle-icon:before,
+  .custom-navbar-toggle-icon:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    transition: transform 0.3s ease;
+  }
+  
+  .custom-navbar-toggle-icon:before {
+    top: -6px;
+  }
+  
+  .custom-navbar-toggle-icon:after {
+    bottom: -6px;
+  }
+  
+  .custom-navbar-toggle.open .custom-navbar-toggle-icon {
+    background-color: transparent;
+  }
+  
+  .custom-navbar-toggle.open .custom-navbar-toggle-icon:before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  
+  .custom-navbar-toggle.open .custom-navbar-toggle-icon:after {
+    transform: rotate(-45deg);
+  }
+  
+  .custom-navbar-menu {
+    display: none;
+  }
+  
+  .custom-navbar-menu.open {
+    display: block;
+  }
+  
+  .custom-navbar-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .custom-nav-item {
+    margin-bottom: 10px;
+  }
+  
+  .custom-nav-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .custom-dropdown {
+    position: relative;
+  }
+  
+  .dropdown-toggle::after {
+    content: '\25BC';
+    display: inline-block;
+    margin-left: 5px;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 100;
+  }
+  
+  .custom-dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu li {
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .dropdown-menu li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #555;
+  }
+  

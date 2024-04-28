@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/cycles/cycles.css">
+    <link rel="stylesheet" href="/accueil/ecole.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="/image/1.jpg" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap" rel="stylesheet" />
+    <style>
+        .c {
+            height: auto;
+        }
+
+        .btn {
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            /* background-clip: white;
+      color: chocolate; */
+            background-image: linear-gradient(#FFC10F, white);
+            background-clip: border-box;
+            color: black;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .error-input {
+            border: 2px solid red !important;
+        }
+
+        .error-message {
+            color: red;
+        }
+
+        .success-message {
+            color: green;
+        }
+    </style>
+</head>
+
+<body style="background: url(bg.jpg) no-repeat; background-size:cover ;">
+    <header>
+        <nav>
+            <div id="nav-bar1">
+                <!-- nav bar -->
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container col-sm-12 col-md-6 mt-5 mb-5 c" id="Recrutement">
+            <h2 class="text-white text-center fond text3">Recrutement - Professeur</h2>
+            <form id="recruitmentForm ">
+                <div class="row ">
+                    <div class="col-lg-6 col-sm-12 ">
+                        <div class="form-group w-100">
+                            <label class="text-white" for="gender"></label>
+                            <select class="form-control" id="gender" name="gender" required>
+                                <option value="">Sélectionnez votre civilité</option>
+                                <option value="Mr">Monsieur</option>
+                                <option value="Mme">Madame</option>
+                            </select>
+                            <span class="error" id="genderError"></span>
+                        </div>
+                        <div class="form-group w-100">
+                            <label class="text-white" for="firstName"></label>
+                            <input type="text" class="form-control" placeholder="Prénom" id="firstName" name="firstName"
+                                required>
+                            <span class="error" id="firstNameError"></span>
+                        </div>
+                        <div class="form-group w-100">
+                            <label class="text-white" for="lastName"></label>
+                            <input type="text" class="form-control" placeholder="Nom" id="lastName" name="lastName"
+                                required>
+                            <span class="error" id="lastNameError"></span>
+                        </div>
+                        <div class="form-group w-100">
+                            <label class="text-white" for="dateOfBirth"></label>
+                            <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth" required>
+                            <span class="error" id="dateOfBirthError"></span>
+                        </div>
+                        <div class="form-group w-100">
+                            <label class="text-white" for="email"></label>
+                            <input type="email" class="form-control" placeholder="Adresse e-mail" id="email"
+                                name="email" required>
+                            <span class="error" id="emailError"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 ">
+                        <div class="form-group w-100">
+                            <label class="text-white" for="address"></label>
+                            <input type="text" class="form-control" placeholder="Adresse" id="address" name="address"
+                                required>
+                            <span class="error" id="addressError"></span>
+                        </div>
+                        <div class="form-group w-100">
+                            <label class="text-white" for="city"></label>
+                            <input type="text" class="form-control" placeholder="Ville" id="city" name="city" required>
+                            <span class="error" id="cityError"></span>
+                        </div>
+                        <div class="form-group w-100">
+                            <label class="text-white" for="postalCode"></label>
+                            <input type="text" class="form-control" placeholder="Code postal" id="postalCode"
+                                name="postalCode" required>
+                            <span class="error" id="postalCodeError"></span>
+                        </div>
+                        <div class="form-group w-100">
+                            <label for="subject"></label>
+                            <select class="form-control" id="subject" name="subject" required>
+                                <option value="">Sélectionnez une matière</option>
+                                <option value="Mathématiques">Mathématiques</option>
+                                <option value="Sciences">Sciences</option>
+                                <option value="Langues">Langues</option>
+                                <option value="Histoire">Histoire</option>
+                            </select>
+                            <span class="error" id="subjectError"></span>
+                        </div>
+                        <div class="form-group w-100">
+                            <label class="text-white" for="experience"></label>
+                            <input type="number" class="form-control" placeholder="Expérience (en années)"
+                                id="experience" name="experience" required>
+                            <span class="error" id="experienceError"></span>
+                        </div>
+                        <div class="form-group me-3 mt-3">
+                            <label for="cv" class="text-white">CV :</label>
+                            <input type="file" class="form-control-file text-white" id="cv" name="cv"
+                                accept=".pdf,.doc,.docx" required>
+                            <span class="error" id="cvError"></span>
+                        </div>
+                        <div class="form-group me-3 mt-4">
+                            <label for="motivation" class="text-white">Lettre de motivation :</label>
+                            <input type="file" class="form-control-file text-white" id="motivation" name="motivation"
+                                accept=".pdf,.doc,.docx" required>
+                            <span class="error" id="motivationError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-warning mt-4">Envoyer</button>
+
+                    </div>
+
+
+            </form>
+
+        </div>
+
+
+    </section>
+    <footer class="professional-footer bg-secondary-subtle">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-4 d-flex flex-column ">
+                    <h3 class="mx-sm-auto mx-md-0">À propos de nous</h3>
+                    <p>Depuis 2005, date de sa fondation, le Groupe scolaire La IMANE EL WIFAK a acquis une solide
+                        expérience dans l'éducation et le développement des nouvelles générations. </p>
+                </div>
+                <div class="col-md-4 d-flex flex-column">
+                    <h3 class="mx-sm-auto mx-md-0">Contact</h3>
+                    <p>Adresse : Zone Industruelle Wifak Lot 52 Oulfa Hay Hassani</p>
+                    <p>Téléphone : 05.22.93.16.11</p>
+                    <p>Email : IMANE_EL_WIFAK@GMAIL.com</p>
+                </div>
+                <div class="col-md-4 d-flex flex-column ">
+                    <h3 class="mx-auto">Suivez-nous</h3>
+                    <ul class="mx-auto">
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/menu.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var form = document.getElementById("contact-form");
+            var messageElement = document.getElementById("message");
+
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                // Réinitialiser les classes d'erreur des champs
+                var fields = [
+                    "gender",
+                    "firstName",
+                    "lastName",
+                    "dateOfBirth",
+                    "email",
+                    "address",
+                    "city",
+                    "postalCode",
+                    "subject",
+                    "experience",
+                    "cv",
+                    "motivation",
+                ];
+
+                fields.forEach(function (field) {
+                    document.getElementById(field).classList.remove("error-input");
+                });
+
+                // Récupérer les valeurs des champs
+                var gender = document.getElementById("gender").value;
+                var firstName = document.getElementById("firstName").value;
+                var lastName = document.getElementById("lastName").value;
+                var dateOfBirth = document.getElementById("dateOfBirth").value;
+                var email = document.getElementById("email").value;
+                var address = document.getElementById("address").value;
+                var city = document.getElementById("city").value;
+                var postalCode = document.getElementById("postalCode").value;
+                var subject = document.getElementById("subject").value;
+                var experience = document.getElementById("experience").value;
+                var cv = document.getElementById("cv").value;
+                var motivation = document.getElementById("motivation").value;
+
+                // Vérifier si les champs requis sont vides
+                if (
+                    gender === "" ||
+                    firstName.trim() === "" ||
+                    lastName.trim() === "" ||
+                    dateOfBirth === "" ||
+                    email.trim() === "" ||
+                    address.trim() === "" ||
+                    city.trim() === "" ||
+                    postalCode.trim() === "" ||
+                    subject === "" ||
+                    experience.trim() === "" ||
+                    cv === "" ||
+                    motivation === ""
+                ) {
+                    // Afficher un message d'erreur
+                    messageElement.textContent =
+                        "Veuillez remplir tous les champs du formulaire.";
+                    messageElement.classList.add("error-message"); // Ajouter la classe d'erreur
+
+                    // Ajouter la classe d'erreur aux champs vides
+                    if (gender === "") {
+                        document.getElementById("gender").classList.add("error-input");
+                    }
+                    if (firstName.trim() === "") {
+                        document.getElementById("firstName").classList.add("error-input");
+                    }
+                    if (lastName.trim() === "") {
+                        document.getElementById("lastName").classList.add("error-input");
+                    }
+                    if (dateOfBirth === "") {
+                        document.getElementById("dateOfBirth").classList.add("error-input");
+                    }
+                    if (email.trim() === "") {
+                        document.getElementById("email").classList.add("error-input");
+                    }
+                    if (address.trim() === "") {
+                        document.getElementById("address").classList.add("error-input");
+                    }
+                    if (city.trim() === "") {
+                        document.getElementById("city").classList.add("error-input");
+                    }
+                    if (postalCode.trim() === "") {
+                        document.getElementById("postalCode").classList.add("error-input");
+                    }
+                    if (subject === "") {
+                        document.getElementById("subject").classList.add("error-input");
+                    }
+                    if (experience.trim() === "") {
+                        document.getElementById("experience").classList.add("error-input");
+                    }
+                    if (cv === "") {
+                        document.getElementById("cv").classList.add("error-input");
+                    }
+                    if (motivation === "") {
+                        document.getElementById("motivation").classList.add("error-input");
+                    }
+                } else {
+                    // Afficher un message de succès
+                    messageElement.textContent =
+                        "Votre formulaire a été envoyé avec succès !";
+                    messageElement.classList.remove("error-message"); // Supprimer la classe d'erreur
+                    messageElement.classList.add("success-message"); // Ajouter la classe de succès
+
+                    // Réinitialiser les valeurs des champs
+                    form.reset();
+                }
+            });
+        });
+
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

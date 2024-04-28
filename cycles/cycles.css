@@ -1,0 +1,66 @@
+
+
+
+.bor{
+border: solid 2px rgba(128, 128, 128, 0.258) !important;
+padding: 15px !important;
+border-radius: 5px;
+text-align: center;
+color: gray;
+
+}
+ 
+.fond{
+    font-family: 'Pacifico', cursive !important;
+    font-weight: bold !important;
+
+}
+.h-1{
+    background: url(/cycles/image/bg1.png);
+}
+.h-v:hover{
+
+    color: #569cd5 !important;
+}
+
+/* .b1{
+    background-color: red;
+}
+.b2{
+    background-color: blue;
+}
+.b3{
+    background-color: rgb(155, 155, 6);
+}
+.b4{
+    background-color: #ffa500;
+} */
+.hslider{
+}
+.wh{
+    height: 10px !important;
+}
+.bor3{
+    border: solid  3px #569cd5;
+    border-top: 0px;
+    /* background: #569cd51b; */
+    height: auto;
+    border-radius: 30px;
+}
+.t-s2{
+    color: #569cd5;
+}
+.bg{
+    background-color:#569cd5 ;
+}
+.text2{
+    color: #569cd5 ;
+}
+.text3{
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+
+}
+.imgsld{
+    height: 60vh;
+
+}

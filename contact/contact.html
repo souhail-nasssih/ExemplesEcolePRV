@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/cycles/cycles.css">
+    <link rel="stylesheet" href="/accueil/ecole.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/image/1.jpg" type="image/x-icon">
+
+  <style>
+    .c{
+        height: 100vh;
+    }
+    .btn {
+      margin-top: 10px;
+    }
+    .btn:hover{
+      /* background-clip: white;
+      color: chocolate; */
+      background-image: linear-gradient(#FFC10F, white);
+      background-clip: border-box; 
+      color: black; 
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body style="background: url(bg.jpg) no-repeat; background-size:100% 100% ;">
+  <header>
+    <nav>
+        <div id="nav-bar1">
+          <!-- nav bar -->
+        </div>
+      </nav>
+    </header>
+
+  <!--  -->
+  <section>
+  <div class="container-fluid   p-5" >
+    <div class="row">
+    <div class="container col-sm-12 col-md-6  mt-5 pt-5  ">
+    <h2 class="text-white text-center fond text3"> Contact-nous</h2>
+    <div>
+      <p class="text-white text-center text3 fond">Adresse : Zone Industruelle Wifak Lot 52 Oulfa Hay Hassani</p>
+      <p class="text-white text-center text3 fond">Téléphone : 05.22.93.16.11</p>
+      <p class="text-white text-center text3 fond">Email : IMANE_EL_WIFAK@GMAIL.COM</p>
+    </div>
+    <form id="contactForm ">
+      <div class="form-group h-100" >
+        <label class="text-white" for="name"></label>
+        <input type="text" class="form-control" placeholder="Nom :" id="name" name="name" required>
+        <span class="error" id="nameError"></span>
+      </div>
+      <div class="form-group">
+        <label class="text-white" for="email"></label>
+        <input type="email" class="form-control" placeholder="Email :" id="email" name="email" required>
+        <span class="error" id="emailError"></span>
+      </div>
+      <div class="form-group">
+        <label class="text-white" for="message"></label>
+        <textarea class="form-control" id="message" placeholder="Message :" name="message" rows="5" required></textarea>
+        <span class="error" id="messageError"></span>
+      </div>
+      <button type="submit" class="btn btn-warning">Envoyer</button>
+    </form>
+  </div>
+  
+</div>
+</div>
+</section>
+
+<div class="container w-100">
+  <h2 class="text-white text-center fond text3 mb-4">Localisation</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d807.5820117572483!2d-7.690471788974571!3d33.55379742971411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda62cac372bffe7%3A0xadce4493ebf79876!2sRdpt%20Georges%2C%20Casablanca!5e0!3m2!1sfr!2sma!4v1686774271944!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
+</div> 
+<footer class="professional-footer bg-secondary-subtle">
+  <div class="container">
+    <div class="row ">
+      <div class="col-md-4 d-flex flex-column ">
+        <h3 class="mx-sm-auto mx-md-0">À propos de nous</h3>
+        <p>Depuis 2005, date de sa fondation, le Groupe scolaire La IMANE EL WIFAK a acquis une solide expérience dans l'éducation et le développement des nouvelles générations. </p>
+      </div>
+      <div class="col-md-4 d-flex flex-column">
+        <h3 class="mx-sm-auto mx-md-0">Contact</h3>
+        <p>Adresse :  Zone Industruelle Wifak Lot 52 Oulfa Hay Hassani</p>
+        <p>Téléphone : 05.22.93.16.11</p>
+        <p>Email : IMANE_EL_WIFAK@GMAIL.com</p>
+      </div>
+      <div class="col-md-4 d-flex flex-column ">
+        <h3 class="mx-auto">Suivez-nous</h3>
+        <ul class="mx-auto">
+          <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/menu.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+  crossorigin="anonymous"
+></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script>
+    // Contrôle et validation du formulaire
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var message = document.getElementById("message").value;
+
+      var nameError = document.getElementById("nameError");
+      var emailError = document.getElementById("emailError");
+      var messageError = document.getElementById("messageError");
+
+      nameError.textContent = "";
+      emailError.textContent = "";
+      messageError.textContent = "";
+
+      if (name.trim() === "") {
+        nameError.textContent = "Veuillez entrer votre nom.";
+        return;
+      }
+
+      if (email.trim() === "") {
+        emailError.textContent = "Veuillez entrer votre adresse e-mail.";
+        return;
+      }
+
+      if (!validateEmail(email)) {
+        emailError.textContent = "Veuillez entrer une adresse e-mail valide.";
+        return;
+      }
+
+      if (message.trim() === "") {
+        messageError.textContent = "Veuillez entrer votre message.";
+        return;
+      }
+
+      // Envoyer le formulaire ici (vous pouvez utiliser AJAX ou soumettre le formulaire)
+
+      alert("Votre message a été envoyé avec succès !");
+      document.getElementById("contactForm").reset();
+    });
+
+    // Fonction de validation de l'adresse e-mail
+    function validateEmail(email) {
+      var re = /\S+@\S+\.\S+/;
+      return re.test(email);
+    }
+  </script>
+    <script>
+      // Contrôle et validation du formulaire
+      document.getElementById("recruitmentForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        var subject = document.getElementById("subject").value;
+        var experience = document.getElementById("experience").value;
+  
+        var nameError = document.getElementById("nameError");
+        var emailError = document.getElementById("emailError");
+        var phoneError = document.getElementById("phoneError");
+        var subjectError = document.getElementById("subjectError");
+        var experienceError = document.getElementById("experienceError");
+  
+        nameError.textContent = "";
+        emailError.textContent = "";
+        phoneError.textContent = "";
+        subjectError.textContent = "";
+        experienceError.textContent = "";
+  
+        if (name.trim() === "") {
+          nameError.textContent = "Veuillez entrer votre nom complet.";
+          return;
+        }
+  
+        if (email.trim() === "") {
+          emailError.textContent = "Veuillez entrer votre adresse e-mail.";
+          return;
+        }
+  
+        if (!validateEmail(email)) {
+          emailError.textContent = "Veuillez entrer une adresse e-mail valide.";
+          return;
+        }
+  
+        if (phone.trim() === "") {
+          phoneError.textContent = "Veuillez entrer votre numéro de téléphone.";
+          return;
+        }
+  
+        if (subject.trim() === "") {
+          subjectError.textContent = "Veuillez entrer la matière enseignée.";
+          return;
+        }
+  
+        if (experience.trim() === "" || experience <= 0) {
+          experienceError.textContent = "Veuillez entrer une expérience valide.";
+          return;
+        }
+  
+        // Envoyer le formulaire ici (vous pouvez utiliser AJAX ou soumettre le formulaire)
+  
+        alert("Votre candidature a été envoyée avec succès !");
+        document.getElementById("recruitmentForm").reset();
+      });
+  
+      // Fonction de validation de l'adresse e-mail
+      function validateEmail(email) {
+        var re = /\S+@\S+\.\S+/;
+        return re.test(email);
+      }
+    </script>
+</body>
+</html>

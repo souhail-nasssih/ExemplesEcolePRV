@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Bootstrap Navbar</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="h.css">
+</head>
+
+<body>
+  <!-- <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top  ">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarMenu"
+          aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav">
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="nav-link  p" href="#">ACCUEIL</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle p" href="#" role="button" id="dropdownCycles" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CYCLES</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownCycles">
+                <li><a class="dropdown-item" href="#">MATERNNEILLE</a></li>
+                <li><a class="dropdown-item" href="#">PRIMMAIRE</a></li>
+                <li><a class="dropdown-item" href="#">COLLEGE</a></li>
+                <li><a class="dropdown-item" href="#">LYCEE</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle p" href="#" role="button" id="dropdownPoles" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PÔLES D'ACTIVITÉS</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownPoles">
+                <li><a class="dropdown-item" href="#">Pôle Artistique</a></li>
+                <li><a class="dropdown-item" href="#">Pôle Sportif</a></li>
+                <li><a class="dropdown-item" href="#">Pôle Culturel</a></li>
+                <li><a class="dropdown-item" href="#">Pôle Ecologie</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle p text-capitalize" href="#" role="button" id="dropdownAbout" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">À PROPOS DE NOUS</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownAbout">
+                <li><a class="dropdown-item" href="#">Equipe Pédagogique</a></li>
+                <li><a class="dropdown-item" href="#">Mot Du Fondateur</a></li>
+                <li><a class="dropdown-item" href="#">Enseignement</a></li>
+                <li><a class="dropdown-item" href="#">Infrastructure</a></li>
+                <li><a class="dropdown-item" href="#">Parents D’élèves</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle p" href="#" role="button" id="dropdownNews" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Actualités</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownNews">
+                <li><a class="dropdown-item" href="#">Transport</a></li>
+                <li><a class="dropdown-item" href="#">Kid’s Club</a></li>
+                <li><a class="dropdown-item" href="#">Garde Manger</a></li>
+                <li><a class="dropdown-item" href="#">Activités Parascolaires</a></li>
+                <li><a class="dropdown-item" href="#">Cours De Soutien</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="nav-link  p" href="#">SERVICES</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="nav-link  p" href="#">CONTACT</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header> -->
+  <!-- nav 2 -->
+  <div class="collapse navbar-collapse " id="">
+    <ul class="navbar-nav ms-auto ">
+      <li class="nav-item ms-auto pe-3 ">
+        <div class="dropdown ">
+          <a
+            class="nav-link p"
+            href="#"
+            id="dropdownTrigger"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            ACCUEIL
+          </a>
+          <div class="container w-100 d-flex"></div>
+        </div>
+      </li>
+      <div class="container">
+        <li class="nav-item ms-auto pe-3">
+          <div class="dropdown">
+            <a
+              class="nav-link dropdown-toggle p"
+              href="#"
+              id="dropdownTrigger"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              CYCLES
+            </a>
+            <ul class="dropdown-menu a4" aria-labelledby="dropdownTrigger">
+              <div class="mather row d-flex g-3 w-100">
+                <div class="boy1 col-4 lh-lg">
+                  <li class="d-flex icon d-block">
+                    <a class="dropdown-item p" href="#">
+                      <img
+                        src="image/alphabet.png"
+                        class="img-fluid w-25 me-2"
+                      />MATERNNEILLE</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item p" href="#"
+                      ><img
+                        src="image/cartable.png"
+                        class="img-fluid w-25 me-2"
+                        alt=""
+                      />
+                      PRIMMAIRE</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item p" href="#"
+                      ><img
+                        src="image/cahier-de-texte.png"
+                        class="img-fluid w-25 me-2"
+                        alt=""
+                      />COLLEGE</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item p" href="#"
+                      ><img
+                        src="image/mortier.png"
+                        class="img-fluid w-25 me-2"
+                        alt=""
+                      />LYCEE</a
+                    >
+                  </li>
+                </div>
+                <div class="boy2 col-4">
+                  <p class="p1-nav text-secondary">
+                    Le Groupe Scolaire La ruche accueille les enfants en
+                    maternelle (petite section à partir de 3 ans, petite
+                    section, moyenne section et grande section), en
+                    primaire, au collège et au lycée.
+                  </p>
+                </div>
+                <div class="boy3 col-4">
+                  <img src="image/e1.jpg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </ul>
+          </div>
+        </li>
+      </div>
+      <li class="nav-item ms-auto pe-3">
+        <div class="dropdown">
+          <a
+            class="nav-link dropdown-toggle p"
+            href="#"
+            id="dropdownTrigger"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Pôles d’activités
+          </a>
+          <ul
+            class="dropdown-menu a3"
+            aria-labelledby="dropdownTrigger"
+          >
+            <div class="mather row d-flex g-3 w-100">
+              <div class="boy1 col-4 lh-lg">
+                <li class="d-flex icon d-block">
+                  <a class="dropdown-item p " href="#">
+                    <img
+                      src="image/palette-de-peinture.png"
+                      class="img-fluid w-25 me-2"
+                    />Pôle Artistique</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item p" href="#"
+                    ><img
+                      src="image/coupe.png"
+                      class="img-fluid w-25 me-2"
+                      alt=""
+                    />
+                    Pôle Sportif
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item p" href="#"
+                    ><img
+                      src="image/livre-ouvert.png"
+                      class="img-fluid w-25 me-2"
+                      alt=""
+                    />Pôle Culturel</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item p" href="#"
+                    ><img
+                      src="image/ecologique.png"
+                      class="img-fluid w-25 me-2"
+                      alt=""
+                    />Pôle Ecologie</a
+                  >
+                </li>
+              </div>
+              <div class="boy2 col-4">
+                <p class="p1-nav text-secondary">
+                  Nos différents pôles proposent aux élèves des
+                  activités artistiques, culturelles et sportives ainsi
+                  que la sensibilisation au respect de l’environnement
+                  afin de développer des savoir-faire.
+                </p>
+              </div>
+              <div class="boy3 col-4">
+                <img
+                  src="image/maternelleFCPE.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item ms-auto pe-3">
+        <div class="dropdown">
+          <a
+            class="nav-link dropdown-toggle p"
+            href="#"
+            id="dropdownTrigger"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            À propos de nous
+          </a>
+          <ul
+            class="dropdown-menu a2"
+            aria-labelledby="dropdownTrigger"
+          >
+            <div class="mather row d-flex  w-100">
+              <div class="boy1 col-4 g-4 lh-lg">
+                <li class="d-flex icon d-block">
+                  <a class="dropdown-item p" href="#">
+                    Equipe Pédagogique</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item p" href="#"
+                    >
+                    Mot Du Fondateur</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item p" href="#"
+                    >Enseignement</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item p" href="#"
+                    >Infrastructure</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item p" href="#"
+                    >Parents D’élèves</a
+                  >
+                </li>
+              </div>
+              <div class="boy2 col-4">
+                <p class="p1-nav text-secondary">
+                  Depuis sa fondation en 1995, le Groupe scolaire la
+                  Ruche situé à Casablanca a acquis au fil du temps une
+                  solide expérience dans l’éducation et la formation de
+                  nos jeunes générations. Le groupe scolaire la Ruche
+                  accueille aujourd’hui les élèves de la maternelle
+                  jusqu’au baccalauréat.
+                </p>
+              </div>
+              <div class="boy3 col-4">
+                <img src="image/qui.png" alt="" class="img-fluid h-75" />
+              </div>
+            </div>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item ms-auto pe-3">
+        <div class="dropdown">
+          <a
+            class="nav-link dropdown-toggle p"
+            href="#"
+            id="dropdownTrigger"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Actualités
+          </a>
+          <ul
+            class="dropdown-menu a1"
+            aria-labelledby="dropdownTrigger"
+          >
+            <div class="mather row d-flex g-3 w-100">
+              <div class="boy1 col-4 lh-lg">
+                <li class="d-flex icon d-block">
+                  <a class="dropdown-item p" href="#">
+                    Transport</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item p" href="#"
+                    >
+                    Kid’s Club</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item p" href="#"
+                    >Garde Manger</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item p" href="#"
+                    >Activités <br> Parascolaires</a
+                  >
+                </li>
+                <a class="dropdown-item p" href="#"
+                >Cours De Soutien</a
+              >
+            </li>
+              </div>
+              <div class="boy2 col-4">
+                <p class="p1-nav text-secondary">
+                  Le Groupe Scolaire La ruche accueille les enfants en
+                  maternelle (petite section à partir de 3 ans, petite
+                  section, moyenne section et grande section), en
+                  primaire, au collège et au lycée.
+                </p>
+              </div>
+              <div class="boy3 col-4">
+                <img src="image/w.jpg" alt="" class="img-fluid" />
+              </div>
+            
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item ms-auto pe-3">
+        <div class="dropdown">
+          <a
+            class="nav-link p"
+            href="#"
+            id="dropdownTrigger"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            SERVICES
+          </a>
+        </div>
+      </li>
+
+      <li class="nav-item ms-auto pe-3">
+        <div class="dropdown">
+          <a
+            class="nav-link p"
+            href="#"
+            id="dropdownTrigger"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            CONTACT
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!-- nav 2 -->
+  <section>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/image/WhatsApp Image 2023-06-10 at 16.36.29.jpg" class="d-block img-fluid img-slid" alt="...">
+          <div class="carousel-caption d-none d-md-flex justify-content-center ">
+            <a href="" class="nav-link m-2  carre">maternelle</a>
+            <a href="" class="nav-link m-2 carre"> maternelle</a>
+            <a href="" class="nav-link m-2 carre"> maternelle</a>
+            <a href="" class="nav-link m-2 carre"> maternelle</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/image/1.jpg" class="d-block img-fluid img-slid" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/image/maternelleFCPE.jpg" class="d-block img-fluid img-slid" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+  crossorigin="anonymous"
+></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+$(document).ready(function() {
+  // Ferme toutes les dropdowns lorsqu'on clique à l'extérieur
+  $(document).click(function() {
+    $('.dropdown-menu').removeClass('show');
+  });
+
+  // Empêche la fermeture de la dropdown lorsqu'on clique à l'intérieur
+  $('.dropdown-menu').click(function(e) {
+    e.stopPropagation();
+  });
+
+  // Gère l'affichage/fermeture des dropdowns lorsqu'on clique sur les liens de la navbar
+  $('.dropdown > a.nav-link').on('click', function(e) {
+    e.preventDefault();
+    var dropdownMenu = $(this).siblings('.dropdown-menu');
+    $('.dropdown-menu').not(dropdownMenu).removeClass('show');
+    dropdownMenu.toggleClass('show');
+  });
+
+  // Ferme la dropdown lorsqu'on re-clique dessus
+  $('.dropdown').on('click', function(e) {
+    var dropdownMenu = $(this).find('.dropdown-menu');
+    if (dropdownMenu.hasClass('show')) {
+      dropdownMenu.removeClass('show');
+    }
+  });
+});
+$(document).ready(function() {
+  // Gère l'affichage/fermeture des dropdowns lorsqu'on clique sur les liens de la navbar
+  $('.dropdown > a.nav-link').on('click', function(e) {
+    e.preventDefault();
+    var dropdownMenu = $(this).siblings('.dropdown-menu');
+    $('.dropdown-menu').not(dropdownMenu).removeClass('show');
+    dropdownMenu.toggleClass('show');
+  });
+});
+$(document).ready(function() {
+  // Gère l'affichage/fermeture du menu mobile lorsqu'on clique sur le bouton de navigation
+  $('.navbar-toggler').on('click', function() {
+    $('.navbar-collapse').toggleClass('show');
+  });
+});
+$(document).ready(function() {
+  // Gère l'affichage/fermeture du menu mobile lorsqu'on clique sur le bouton de navigation
+  $('.navbar-toggler').on('click', function() {
+    $('.navbar-collapse').toggleClass('show');
+  });
+
+  // Ferme le menu mobile lorsqu'on clique à l'extérieur
+  $(document).on('click', function(e) {
+    if (!$('.navbar-collapse').is(e.target) && $('.navbar-collapse').has(e.target).length === 0) {
+      $('.navbar-collapse').removeClass('show');
+    }
+  });
+});
+
+  </script>
+</body>
+
+</html>

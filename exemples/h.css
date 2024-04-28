@@ -1,0 +1,41 @@
+
+li>a{
+    font-size: 1rem !important;
+    }
+    
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    /* Ajoutez les styles CSS pour la transition du menu */
+.dropdown-menu {
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+    transform: scaleY(0);
+    max-height: 0;
+    overflow: hidden;
+  }
+  
+  .dropdown-menu.show {
+    transform: scaleY(1);
+    max-height: 500px;
+  }
+/* Ajoutez les styles CSS pour l'animation d'ouverture du menu mobile */
+.navbar-collapse {
+    transform-origin: top left;
+    transform: perspective(800px) rotateX(-90deg);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .navbar-collapse.show {
+    transform: perspective(800px) rotateX(0deg);
+  }
+  .navbar-nav {
+    margin-left: auto;
+  }
+
+  .nav-item {
+    margin-left: 10px;
+  }
+  
+  

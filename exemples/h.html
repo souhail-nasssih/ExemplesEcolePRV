@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu Mobile</title>
+    <link rel="stylesheet" type="text/css" href="h2.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+  <nav class="custom-navbar custom-navbar-mobile">
+    <div class="custom-navbar-header">
+      <a class="custom-navbar-brand" href="#">Logo</a>
+      <button class="custom-navbar-toggle" type="button" aria-controls="custom-navbarMenu" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="custom-navbar-toggle-icon"></span>
+      </button>
+    </div>
+    <div class="custom-navbar-menu" id="custom-navbarMenu">
+      <ul class="custom-navbar-nav">
+        <li class="custom-nav-item">
+          <a class="custom-nav-link" href="#">Accueil</a>
+        </li>
+        <li class="custom-nav-item custom-dropdown">
+          <a class="custom-nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true"
+            aria-expanded="false">Élément 2</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+            <li><a href="#">Option 4</a></li>
+          </ul>
+        </li>
+        <li class="custom-nav-item custom-dropdown">
+          <a class="custom-nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true"
+            aria-expanded="false">Élément 3</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+            <li><a href="#">Option 4</a></li>
+          </ul>
+        </li>
+        <li class="custom-nav-item custom-dropdown">
+          <a class="custom-nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true"
+            aria-expanded="false">Élément 4</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+            <li><a href="#">Option 4</a></li>
+          </ul>
+        </li>
+        <li class="custom-nav-item custom-dropdown">
+          <a class="custom-nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true"
+            aria-expanded="false">Élément 5</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+            <li><a href="#">Option 4</a></li>
+          </ul>
+        </li>
+        <li class="custom-nav-item">
+          <a class="custom-nav-link" href="#">Élément 6</a>
+        </li>
+        <li class="custom-nav-item">
+          <a class="custom-nav-link" href="#">Élément 7</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var toggleButtons = document.querySelectorAll('.custom-navbar-toggle');
+    for (var i = 0; i < toggleButtons.length; i++) {
+      toggleButtons[i].addEventListener('click', function() {
+        var menu = this.nextElementSibling;
+        menu.classList.toggle('open');
+      });
+    }
+  });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container d-sm-block d-lg-none ">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+
+        <div class=" navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto pe-3">
+            <li class="nav-item">
+              <div class="dropdown">
+                <a
+                  class="nav-link  p"
+                  href="#"
+              
+                >
+                ACCUEIL
+                </a>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle p"
+                  href="#"
+               
+                >
+                CYCLES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">MATERNNEILLE</a></li>
+                  <li><a class="dropdown-item" href="#">PRIMMAIRE</a></li>
+                  <li><a class="dropdown-item" href="#">COLLEGE</a></li>
+                  <li><a class="dropdown-item" href="#">LYCEE</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle p"
+                  href="#"
+                
+                >
+                  PÔLES D'ACTIVITÉS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Pôle Artistique</a></li>
+                  <li><a class="dropdown-item" href="#">Pôle Sportif</a></li>
+                  <li><a class="dropdown-item" href="#">Pôle Culturel</a></li>
+                  <li><a class="dropdown-item" href="#">Pôle Ecologie</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle p text-capitalize"
+                  href="#"
+                 
+                >
+                À PROPOS DE NOUS
+                </a>
+                <ul class="dropdown-menu" >
+                  <li><a class="dropdown-item" href="#">Equipe Pédagogique</a></li>
+                  <li><a class="dropdown-item" href="#">Mot Du Fondateur</a></li>
+                  <li><a class="dropdown-item" href="#">Enseignement</a></li>
+                  <li><a class="dropdown-item" href="#">Infrastructure</a></li>
+                  <li><a class="dropdown-item" href="#">Parents D’élèves</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle p"
+                  href="#"
+            
+                >
+                Actualités
+                </a>
+                <ul class="dropdown-menu" >
+                  <li><a class="dropdown-item" href="#">Transport</a></li>
+                  <li><a class="dropdown-item" href="#"> Kid’s Club</a></li>
+                  <li><a class="dropdown-item" href="#">Garde Manger</a></li>
+                  <li><a class="dropdown-item" href="#">Activités Parascolaires</a></li>
+                  <li><a class="dropdown-item" href="#">Cours De Soutien</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a
+                  class="nav-link  p"
+                  href="#"
+                
+                >
+                SERVICES
+                </a>
+                <li class="nav-item">
+                  <div class="dropdown">
+                    <a
+                      class="nav-link  p"
+                      href="#"
+                      
+                    >
+                    CONTACT
+                    </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div> -->

@@ -1,0 +1,12 @@
+.fond{
+    font-family: 'Pacifico', cursive !important;
+    font-weight: bold !important;
+
+}
+.error-message {
+    color: red !important;
+  }
+  
+  .error-input {
+    border: 5px solid red !important;
+  }
